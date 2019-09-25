@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dark Demo</title>
+    <style>
+      body {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Some Styles Defined</h1>
+    <p>According to most browsers, this page should render with a light background and dark text by default. If the OS is requesting a dark style, most browser still render a light backround and dark text because there are no explicit dark styles defined.</p>
+    <ul>
+      <li><a href="index.html">No Styling</a></li>
+      <li><a href="dark.html">Explicit Dark Support</a></li>
+      <li><a href="mixed.html">Some Styles Defined</a></li>
+    </ul>
+  </body>
+</html>
+
