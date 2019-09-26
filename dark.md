@@ -5,7 +5,7 @@ title: Explicit Dark Support
 <style>
 @media(prefers-color-scheme: dark) {
   body {
-    background: #333;
+    background: black;
     color: white;
   }
 
