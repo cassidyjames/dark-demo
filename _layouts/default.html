@@ -16,20 +16,17 @@
 
       img {
         display: inline-block;
-        width: calc(50% - 1em);
-        max-width: 600px;
         margin: 0.25em;
+        max-width: 600px;
+        width: calc(50% - 1em);
       }
 
       img.mobile {
-        max-width: 300px;
         box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.5);
+        max-width: 300px;
       }
 
-      h2 {
-        margin-top: 2em;
-      }
-
+      h2,
       h3 {
         margin-top: 2em;
       }
@@ -53,7 +50,12 @@
       <input type="submit" value="Submit" />
     </fieldset>
 
+    <h2>Source</h2>
+    <p>Just view the source of this page, or see <a href="https://raw.githubusercontent.com/cassidyjames/dark-demo/master/{{ page.path }}">this file</a> in the <a href="https://github.com/cassidyjames/dark-demo">GitHub repo</a>.
+
     <h2>Screenshots of this Page</h2>
+    <p>Light, Dark</p>
+
     {% assign slug = page.path | split: "." | first %}
 
     <h3>Firefox on Linux:</h3>
@@ -75,9 +77,6 @@
     <h3>Safari on iOS:</h3>
     <img class="mobile" src="images/iOS-Light-{{ slug }}.png" alt="iOS Light" />
     <img class="mobile" src="images/iOS-Dark-{{ slug }}.png" alt="iOS Dark" />
-
-    <h2>Source</h2>
-    <p>Just view the source of this page, or see <a href="https://raw.githubusercontent.com/cassidyjames/dark-demo/master/{{ page.path }}">this file</a> in the <a href="https://github.com/cassidyjames/dark-demo">GitHub repo</a>.
 
     <h2>Demos:</h2>
     <ul>
