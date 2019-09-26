@@ -21,8 +21,16 @@
         width: calc(50% - 1em);
       }
 
+      img.mobile,
+      img.shadow {
+        border-radius: 0.2em;
+        border: 1px solid rgba(64, 64, 64, 0.5);
+        border-top-color: rgba(128, 128, 128, 0.5);
+        border-bottom-color: rgba(32, 32, 32, 0.5);
+        box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.5);
+      }
+
       img.mobile {
-        box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.5);
         max-width: 300px;
       }
 
@@ -63,8 +71,8 @@
     <img src="images/Firefox-Dark-{{ slug }}.png" alt="Firefox Linux Dark" />
 
     <h3>WebKitGTK on Linux:</h3>
-    <img src="images/Ephemeral-Light-{{ slug }}.png" alt="Ephemeral Linux Light" />
-    <img src="images/Ephemeral-Dark-{{ slug }}.png" alt="Ephemeral Linux Dark" />
+    <img class="shadow" src="images/Ephemeral-Light-{{ slug }}.png" alt="Ephemeral Linux Light" />
+    <img class="shadow" src="images/Ephemeral-Dark-{{ slug }}.png" alt="Ephemeral Linux Dark" />
 
     <h3>Chrome on Android:</h3>
     <img class="mobile" src="images/Chrome-Android-Light-{{ slug }}.png" alt="Chrome Android Light" />
